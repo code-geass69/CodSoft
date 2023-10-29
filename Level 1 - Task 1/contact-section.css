@@ -1,0 +1,64 @@
+.contact-section {
+    background-color: #84e0cc;
+    padding: 20px 0;
+    margin-top: 9rem;
+}
+
+.contact-section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info{
+    padding-left: 4rem;
+}
+
+.contact-info,
+.newsletter {
+    flex: 1;
+    max-width: 400px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding-right: 12px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newsletter input,
+.newsletter button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter input {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    width: 30%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}

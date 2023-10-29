@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling to anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>A<span class="danger">th</span>arv</h1>
+        </div>
+        <div class="navbar">
+            <a href="#home">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="#about">
+                <span class='material-icons-sharp'>person</span>
+                <h3>About</h3>
+            </a>
+            <a href="#skills">
+                <span class='material-icons-sharp'>grade</span>
+                <h3>Skills</h3>
+            </a>
+            <a href="#projects">
+                <span class='material-icons-sharp'>school</span>
+                <h3>Projects</h3>
+            </a>
+            <a href="#contact">
+                <span class='material-icons-sharp'>phone</span>
+                <h3>Contact Me</h3>
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="content">
+                <h1>Welcome <span class="danger">to my </span>Portfolio!!!!</h1>
+                <p>Welcome to my world of web and backend development. I'm <span class="danger"> Atharv More </span>, a
+                    creator dedicated to crafting
+                    seamless digital experiences. With an eye for detail and a passion for innovation, I turn ideas into
+                    captivating realities. Explore my portfolio and let's bring your vision to life.</p>
+            </div>
+            <div class="image">
+                <img src="https://media.istockphoto.com/id/1072179256/vector/concept-ux-user-experience-development-design-usability-improve-software-develop-company-ui.jpg?s=612x612&w=0&k=20&c=12KokDhwIlrPPYe7ejQ0FA-_HMtH_J53oohOcH0cHyo="
+                    alt="Your Image Description">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="image">
+                <img src="https://img.freepik.com/premium-vector/student-avatar-illustration-user-profile-icon-youth-avatar_118339-4395.jpg"
+                    alt="Profile Image">
+            </div>
+            <div class="content">
+                <h1>A<span class="danger">bou</span>t Me</h1>
+                <div class="line"></div>
+                <h3>Nice to Meet You</h3>
+                <h2><strong>Frontend Web Developer who creates amazing digital experience</strong></h2>
+                <p>Greetings!
+                    Venturing into the realm of digital creation, I am a passionate web developer with a
+                    knack for transforming ideas into immersive online experiences. Beyond the screen, I'm an avid
+                    traveler, exploring hidden gems around the world and seeking inspiration in every corner. I thrive
+                    on challenges, constantly learning and adapting to new technologies. </p>
+                <div class="details">
+                    <div class="detail-group">
+                        <div class="detail">
+                            <span class="label">Name:</span>
+                            <span class="value">Atharv More</span>
+                        </div>
+                        <div class="detail1">
+                            <span class="label">Location:</span>
+                            <span class="value">Your Location</span>
+                        </div>
+                    </div>
+                    <div class="detail-group1">
+                        <div class="detail">
+                            <span class="label">Email:</span>
+                            <span class="value">youremail@example.com</span>
+                        </div>
+                        <div class="detail2">
+                            <span class="label">Availability:</span>
+                            <span class="value">Full-time</span>
+                        </div>
+                    </div>
+                    <a href="D:\TCET\Atharv More_Resume.pdf">
+                        <button class="resume-button">Download Resume</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skill-section">
+        <div class="skills-container">
+            <div class="heading">
+                <h1 style="font-size: 2.7rem; ">S<span class="danger">ki</span>lls</h1>
+            </div>
+            <div class="skill-label">HTML</div>
+            <div class="skill-bar-container">
+                <div class="skill-bar html">90%</div>
+            </div>
+
+            <div class="skill-label">JavaScript</div>
+            <div class="skill-bar-container">
+                <div class="skill-bar javascript">80%</div>
+            </div>
+
+            <div class="skill-label">Node.js</div>
+            <div class="skill-bar-container">
+                <div class="skill-bar nodejs">70%</div>
+            </div>
+
+            <div class="skill-label">CSS</div>
+            <div class="skill-bar-container">
+                <div class="skill-bar css">85%</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="portfolio-section">
+        <div class="portfolio-heading">
+            <h2 style="font-size: 2.7rem;">P<span class="danger">roj</span>ects</h2>
+        </div>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="https://wpvip.edutopia.org/wp-content/uploads/2022/10/robinson-169hero-portfolio-shutterstock.jpg?w=2880&quality=85"
+                    alt="Project 1">
+                <h3>Portfolio Web-Page</h3>
+                <p>A web page showcasing a collection of projects and skills, providing visitors with an overview of
+                    your capabilities and expertise.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://repository-images.githubusercontent.com/379983195/46a2f600-d535-11eb-86d6-5844b522cb4e"
+                    alt="Project 2">
+                <h3>E-Learning Portal</h3>
+                <p>An online platform offering a wide range of courses and educational resources, accessible to learners
+                    worldwide, fostering a dynamic learning experience.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://www.skoolbeep.com/blog/wp-content/uploads/2020/12/WHAT-IS-THE-PURPOSE-OF-A-LIBRARY-MANAGEMENT-SYSTEM-min.png"
+                    alt="Project 3">
+                <h3>Library Management System</h3>
+                <p>A comprehensive software solution designed to efficiently organize and manage a library's resources,
+                    including books, periodicals, and digital media, streamlining tasks such as cataloging, borrowing,
+                    and inventory management.</p>
+            </div>
+            <div class="project-card">
+                <img src=" https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg?w=2000" alt="Project 3">
+                <h3>E-Commerce Website</h3>
+                <p>An online platform that enables businesses to showcase and sell their products or services to a
+                    global audience, providing users with a seamless shopping experience and secure transaction
+                    capabilities.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://kit8.net/wp-content/uploads/edd/2021/08/Car_OK_preview.jpg" alt="Project 3">
+                <h3>Car Buying Website</h3>
+                <p>A specialized online platform dedicated to helping users find and purchase their ideal vehicles,
+                    offering an extensive range of cars, along with comprehensive information and features to facilitate
+                    informed decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+                
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Address: 101, Eden Garden, Mumbai</p>
+                <p>Phone: 9167xxxxxx</p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
