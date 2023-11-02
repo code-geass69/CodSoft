@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: auto;
+}
+
+.social-icons a:hover {
+    background-color: #24eed3;
+}
+
+.whatsapp-button {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(19, 231, 15);
+    background: linear-gradient(90deg, rgba(19, 231, 15, 0.9332107843137255) 41%, rgba(235, 255, 240, 1) 100%, rgba(244, 224, 0, 1) 100%);
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.navbar-title {
+    font-size: 24px;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #FF4500;
+}
+
+.search-box {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    font-family: 'Poppins', sans-serif;
+
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.gallery-container {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.gallery-container img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4rem;
+    margin-top: 6rem;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.about-section .content {
+    max-width: 700px;
+    padding-left: 3rem;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.about-section h2 {
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background-clip: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: var(--color-dark-varient);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about-section .image img {
+    margin-top: 9rem;
+    margin-left: 8rem;
+    max-width: 100%;
+    height: 20rem;
+    border-radius: 30px;
+}
+
+.read-button {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    color: rgb(255, 243, 243);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services-section {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.services-heading {
+    margin-bottom: 1rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(5px);
+}
+
+.service-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin: 10px 0;
+}
+
+.serivce-card p {
+    font-size: 0.9em;
+}
+
+.footer-section {
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    padding: 20px 0;
+    margin-top: 9rem;
+}
+
+.footer-section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rights {
+    color: white;
+    padding-left: 4rem;
+    flex: 1;
+    max-width: 400px;
+}
+
+.newsletter {
+    flex: 1;
+    max-width: 400px;
+}
+.newsletter h3{
+    color: white;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newsletter input,
+.newsletter button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter input {
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    font-family: 'Poppins', sans-serif;
+
+    width: 30%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}

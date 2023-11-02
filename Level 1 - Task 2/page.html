@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <a href="https://www.whatsapp.com/"><button class="whatsapp-button">Chat on WhatsApp</button></a>
+    </div>
+    <div class="navbar">
+        <div class="navbar-title">
+            <h3>Landing Page</h3>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <div class="search-icon">&#128269;</div>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <div class="gallery">
+            <div class="slide">
+                <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2023/05/correcto.jpg"
+                    alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2023/05/23163145/modern-office-interior-design-with-partition-plants.jpg"
+                    alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://thumbs.dreamstime.com/b/modern-office-interior-13654524.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="image">
+                <img src="https://img.freepik.com/premium-vector/business-characters-working-office_48866-312.jpg"
+                    alt="Profile Image">
+            </div>
+            <div class="content">
+                <h1>About Us</h1>
+                <div class="line"></div>
+                <h2><strong>"Empowering Business, Igniting Innovation"</strong></h2>
+                <p>Greetings!
+                    Welcome to TechWave Solutions. We are a forward-thinking technology company dedicated to delivering
+                    innovative solutions for businesses of all sizes. Our team of experts combines creativity and
+                    technical expertise to develop cutting-edge software and digital experiences. With a passion for
+                    excellence, we aim to empower businesses with the tools they need to thrive in today's rapidly
+                    evolving digital landscape. At TechWave Solutions, we believe in the power of technology to
+                    transform and elevate businesses, and we are committed to being a trusted partner on your journey to
+                    success. </p>
+                <a href="">
+                    <button class="read-button">Read More</button>
+                </a>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="services-heading">
+            <h2 style="font-size: 1.7rem;">Our Services</h2>
+        </div>
+        <div class="service-cards">
+            <div class="service-card">
+                <img
+                    src="https://wpvip.edutopia.org/wp-content/uploads/2022/10/robinson-169hero-portfolio-shutterstock.jpg?w=2880&quality=85">
+                <h3>User Experience</h3>
+            </div>
+            <div class="service-card">
+                <img
+                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202307/why-design-thinking-is-important-in-todays-job-industries-132433-16x9.jpg?VersionId=r3DkuIlkjSZI0KClaN79ksVBKui34xNG&size=690:388">
+                <h3>Creative Desgin</h3>
+            </div>
+            <div class="service-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbftQCLAAyPCtMP854K3u4f6j4yPs0-bxUdKKrwvOIbQaNE9UvGzPPPiAOwt7_1W4Mhk&usqp=CAU">
+                <h3>Dynamic Development</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer-section">
+        <div class="container">
+            <div class="rights">
+                <div>
+                    <span>Email: xyz@gmail.com </span>
+                    <br>
+                    <span> Phone: 981928xxx</span>
+                    <br>
+                    <span>Fax: 34236xxx</span>
+                </div>
+
+                <p>&copy; 2023 Your Company. All rights reserved.</p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        let slideIndex = 1;
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
